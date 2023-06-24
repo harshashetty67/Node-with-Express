@@ -8,5 +8,6 @@ module.exports = {
         "ecmaVersion": "latest"
     },
     "rules": {
+        "comma-dangle": 0
     }
 }
