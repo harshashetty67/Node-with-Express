@@ -1,6 +1,5 @@
 const express = require('express'); // Common-JS based import
 const app = express();
-const path = require('path')
 
 const chalk = require('chalk'); // helps in colouring the text => use version 4.1 to work with Common-JS
 const port = process.env.PORT; // port to serve the requests.
