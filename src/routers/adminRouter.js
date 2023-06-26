@@ -6,7 +6,7 @@ const debug = require('debug')('app:adminRouter'); // scoping the debug to admin
 
 const adminRouter = express.Router();
 
-const url = "mongodb+srv://harshashetty67:dHs8ttYwb2hvf7Fr@my-mongo.elbhwd6.mongodb.net/";
+const url = "******************";
 const dbName = 'GlobalEdge';
 
 adminRouter.route('/').get((req, res) => {

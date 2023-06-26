@@ -4,7 +4,7 @@ const { MongoClient, ObjectId } = require('mongodb');
 
 const debug = require('debug')('app:sessionRouter'); // scoping the debug
 
-const url = "mongodb+srv://harshashetty67:dHs8ttYwb2hvf7Fr@my-mongo.elbhwd6.mongodb.net/";
+const url = "*********";
 const dbName = 'GlobalEdge';
 
 sessionRouter.route('/').get( // for normal /sessions route.
