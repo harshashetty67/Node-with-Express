@@ -4,8 +4,18 @@ const { MongoClient, ObjectId } = require('mongodb');
 
 const debug = require('debug')('app:sessionRouter'); // scoping the debug
 
-const url = "*********";
+const url = "**********";
 const dbName = 'GlobalEdge';
+
+// Only logged-in users should view the session => using custom Middleware.
+sessionRouter.use((req, res, next) => {
+  if (req.user) {
+    next();
+  }
+  else {
+    res.redirect('/auth/signIn');  // Redirect if user not signed-in.
+  }
+})
 
 sessionRouter.route('/').get( // for normal /sessions route.
   (req, res) => {

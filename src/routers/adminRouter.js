@@ -6,7 +6,7 @@ const debug = require('debug')('app:adminRouter'); // scoping the debug to admin
 
 const adminRouter = express.Router();
 
-const url = "******************";
+const url = "**********";
 const dbName = 'GlobalEdge';
 
 adminRouter.route('/').get((req, res) => {
@@ -19,6 +19,7 @@ adminRouter.route('/').get((req, res) => {
     catch (error) {
       debug(error.stack);
     }
+    await client.close();
   }())
 
 }
